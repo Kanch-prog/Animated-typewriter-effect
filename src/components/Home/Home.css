@@ -1,0 +1,104 @@
+.home {
+  background-color: powderblue;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.home-intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-size: 50px;
+  margin-left: 200px;
+}
+.home-image {
+  width: 100%;
+  height: 80vh;
+}
+.bunny-image {
+  margin: 50px auto;
+  height: 80vh;
+}
+.title {
+  animation-name: moveRight;
+  animation-duration: 0.7s;
+}
+.titleTwo {
+  animation-name: moveLeft;
+  animation-duration: 1s;
+}
+.titleThree {
+  animation-name: moveRight;
+  animation-duration: 1.3s;
+  color: #008080;
+}
+.text {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.button {
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  background-color: #73a9c2;
+  color: black;
+  padding: 12px 25px;
+  position: relative;
+  transform: translateZ(0);
+  animation-name: moveUp;
+  animation-duration: 1s;
+  cursor: pointer;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: ;
+  transform: scaleX(0);
+  transition: 300ms ease-out;
+}
+.button:hover:before {
+  transform: scaleX(1);
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

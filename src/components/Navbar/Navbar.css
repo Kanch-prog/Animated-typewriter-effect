@@ -1,0 +1,11 @@
+.navbar {
+  background-color: teal;
+  color: white;
+  font-size: 24px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px solid teal;
+}
